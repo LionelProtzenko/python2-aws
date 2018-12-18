@@ -9,7 +9,7 @@ services:
   hostname: digit
   build: ./DigitalToys 
   ports:
-    - 8787:8080
+    - 80:80
   networks:
     - lan_network
  flask_login:
@@ -20,7 +20,7 @@ services:
   depends_on:
     - db
   ports:
-    - 5000:5000
+    - 80:80
   environment: 
     DB_USER_USERNAME: hme
     DB_USER_PASSWORD: password
